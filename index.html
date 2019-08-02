@@ -18,16 +18,32 @@
         font-size: 100pt !important;
         text-align: justify !important;
       }
+
+      .suptitle{
+        text-align: justify !important;
+        color:rgba(255, 255, 255, 0.747);
+      }
     
       .subtitle {
         padding-left: 15px !important;
-        border-left: 2px #b53202 solid !important;
+        color:rgba(255, 255, 255, 0.747);
         text-align: justify !important;
       }
 
-    
+      .subtitle-right {
+        position: absolute !important;
+        right: 0px !important; 
+      }
+
+      
       .text-right {
         text-align: end !important;
+      }
+
+      .url {
+        color: #d3cfcfa2 !important;
+        font-size: 70% !important;
+        text-align: justify !important;
       }
     
       .panel {
@@ -62,7 +78,7 @@
         <section data-background-image="./images/background-slide2.png">
 
           <section>
-            <h4 style="text-align:justify; color:rgba(255, 255, 255, 0.747)">Workshop de</h4>
+            <h4 class="suptitle">Workshop de</h4>
             <h1 class="title">Data Science</h1>
           </section>
           <section>
@@ -89,18 +105,10 @@
           </section>
           <section>
             <div class="text-justify">
-              <p class="fragment fade-up"> <span class="icons"></span> É um software desenvovido para dispositvos móveis;</p>
-              <p class="fragment fade-up"> <span class="icons"></span> Pode existir o desenvolvimento para diversas plataformas como: Android, iOS, Windows Phone...</p>
-            </div>
-          </section>
-          <section>
-            <h2>Progressive Web App</h2>
-          </section>
-          <section>
-            <div class="text-justify">
-              <p class="fragment fade-up"> <span class="icons"></span> <i>PWA</i> é uma metodologia de desenvolvimento de software;</p>
-              <p class="fragment fade-up"> <span class="icons"></span> Evolução híbrida das aplicações;</p>
-              <p class="fragment fade-up"> <span class="icons"></span> Utiliza os recursos ofertaods por navegadores para executar as aplicações.  </p>
+              <p>
+                "Ciência de dados é uma área interdisciplinar voltada para o estudo e a análise de dados, estruturados ou não, que visa a extração de conhecimento ou insights para possíveis tomadas de decisão, de maneira similar à mineração de dados."
+              </p>
+              <p class="subtitle subtitle-right"><i>- Wikipédia</i></p>
             </div>
           </section>
         </section>
@@ -111,19 +119,37 @@
           </section>
 
           <section>
-            <p class="title-topic" >Apps nativos</p>
+            <p class="title-topic" >Aplicações</p>
             <div class="text-justify">
-              <p class="fragment fade-up"> <span class="icons"></span> Acesso às funcionalidades do dispositvo com mais precisão;</p>
-              <p class="fragment fade-up"> <span class="icons"></span> Linguagem específica para desenvolvimento;</p>
-              <p class="fragment fade-up"> <span class="icons"></span> Limitação de acordo com a versão do dispositvo.</p>
+              <p class="fragment fade-up"> <span class="icons"></span> Images;</p>
+              <p class="fragment fade-up"> <span class="icons"></span> Vídeos;</p>
+              <p class="fragment fade-up"> <span class="icons"></span> Dados médicos;</p>
+              <p class="fragment fade-up"> <span class="icons"></span> Reconhecimento de voz</p>
             </div>
           </section>
           <section>
-            <p class="title-topic">Apps híbridos</p>
+            <p class="title-topic">Aplicações</p>
             <div class="text-justify">
-              <p class="fragment fade-up"> <span class="icons"></span> São multiplaforma (portabilidade);</p>
-              <p class="fragment fade-up"> <span class="icons"></span> Custo baixo para desenvolvimento;</p>
-              <p class="fragment fade-up"> <span class="icons"></span> Performance pouco inferior comparado ao app nativo.</p>
+              <p class="fragment fade-up"> <span class="icons"></span> Dados bancários e área financeira;</p>
+              <p class="fragment fade-up"> <span class="icons"></span> Sistemas de recomendação;</p>
+              <p class="fragment fade-up"> <span class="icons"></span> Detecção de anamolia e fraude;</p>
+              <p class="fragment fade-up"> <span class="icons"></span> Mapeamento e trânsito;</p>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Áreas de atuação</h2>
+          </section>
+          <section>
+            <p class="title-topic">Áreas</p>
+            <div class="text-justify">
+              <p class="fragment fade-up"> <span class="icons"></span>Engenheiro de dados;</p>
+              <p class="fragment fade-up"> <span class="icons"></span>Engenheiro/Cientista de Machine Learning;</p>
+              <p class="fragment fade-up"> <span class="icons"></span>Especialista em Business Analytics</p>
+              <p class="fragment fade-up"> <span class="icons"></span>Desenvolvedor de Visualização de Dados;</p>
+              <p class="fragment fade-up"> <span class="icons"></span>Cientista de dados;</p>
             </div>
           </section>
         </section>
@@ -133,109 +159,59 @@
             <h2>Quais linguagens se encaixam bem?</h2>
           </section>
 
-          <section>
-            <p class="text-justify"> "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency."</p>
+          <section data-background="white">
+            <p style="color:#321db6">Linguagem R</p>
+            <img src="./images/r.png" width=400>
           </section>
 
-          <section>
-            <p>Primeiros passos com Git</p>
-            <pre class="bash" data-trim contenteditable>
-              <code>
-#Gere uma chave SSH que será criada em <strong>~/.ssh/</strong> 
-<span class="icons"></span> ssh-keygen -t rsa -C "your comment"
-
-#Crie uma pasta de sua preferência
-<span class="icons"></span> cd /home/usuario/Documentos/
-<span class="icons"></span> mkdir MeuProjeto
-<span class="icons"></span> cd MeuProjeto
-
-#Configure a pasta com o Git
-<span class="icons"></span> git init
-
-#Crie um arquivo para enviar como parte do projeto
-<span class="icons"></span> echo "print('Hello World')" >> hello_world.py
-              </code>
-            </pre>
+          <section data-background="white">
+            <p style="color:#321db6">Linguagem SQL (Structured Query Language)</p>
+            <img src="./images/sql.jpg" width=600>
+          </section>
+          
+          <section data-background="white">
+            <p style="color:#321db6">Linguagem Scala</p>
+            <img src="./images/scala.png" width=400>
           </section>
 
-          <section>
-            <img src="./images/github.png" alt="GitHub logo">
+          <section data-background="white">
+            <p style="color:#321db6">Linguagem Julia</p>
+            <img src="./images/julia.png" width=400>
           </section>
 
-          <section>
-            <div class="text-justify">
-              <p class="fragment fade-up"> <span class="icons"></span> Plataforma de hospedagem de código;</p>
-              <p class="fragment fade-up"> <span class="icons"></span> Permite o controle de versão de código com o Git;</p>
-              <p class="fragment fade-up"> <span class="icons"></span> Permite que os usuários contribuam em outros projetos;</p>
-              <p class="fragment fade-up"> <span class="icons"></span> E ofeta também a hospedagem de páginas com o <a href="https://pages.github.com/">GitHub Pages </a> e de partes de código com o <a href="https://gist.github.com/"> GitHub Gist</a>.</p>
-
-            </div>
+          <section data-background="white">
+            <p style="color:#321db6">Linguagem Java</p>
+            <img src="./images/java.png" width=400>
           </section>
 
-          <section>
-            <p>Perfil com todos os repositórios</p>
-            <img src="./images/my-profile.png" alt="My profile GitHub">
+          <section data-background="white">
+            <p style="color:#321db6">Linguagem Python</p>
+            <img src="./images/python.png" width=400>
           </section>
 
-          <section>
-            <h2> Enviando o projeto para o GitHub </h2>
-          </section>
-
-          <section>
-            <p class="title-topic"> Crie um novo repositório com o nome do seu projeto</p>
-            <img src="./images/new-repo.png" alt="New repo">
-          </section>
-
-          <section>
-            <p class="title-topic"> Crie um novo repositório com o nome do seu projeto</p>
-            <img src="./images/create-repo.png" alt="New repo">
-          </section>
-
-          <section>
-            <p class="title-topic"> Copie a URL para configurar o repositório local com o remoto </p>
-            <img src="./images/config-repo.png" alt="Config repo">
-          </section>
-
-          <section>
-            <p>Configurando repositório local</p>
-            <pre>
-              <code class="bash" data-trim contenteditable>
-#Adiciona a URL do repositório ao arquivo de configuração <strong>.git/config</strong>
-<span class="icons"></span> git remote add origin your_url.com
-              </code>
-            </pre>
-          </section>
-
-          <section>
-            <p>Enviando projeto para o repositório no GitHub</p>
-            <pre>
-              <code class="bash" data-trim contenteditable>
-#Visualize o status atual do seu projeto
-<span class="icons"></span> git status
-
-#Adicione os arquivos a fila para ser enviado
-<span class="icons"></span> git add .
-
-#Finalize a transação dos dados
-<span class="icons"></span> git commit -m "Meu primeiro commit"
-
-#Envie os dados para o repositório
-<span class="icons"></span> git push origin master
-              </code>
-            </pre>
-          </section>
         </section>
 
         <section>
           <section>
             <h2>Porque Python?!</h2>
           </section>
-          <section>
-            <div class="text-justify">
-              <p class="fragment fade-up"> <span class="icons"></span> É um software desenvovido para dispositvos móveis;</p>
-              <p class="fragment fade-up"> <span class="icons"></span> Pode existir o desenvolvimento para diversas plataformas
-                como: Android, iOS, Windows Phone...</p>
-            </div>
+          <section data-background="white">
+            <img src="./images/numpy.png" width=700>
+          </section>
+          <section data-background="white">
+            <img src="./images/pandas.png" width=700>
+          </section>
+          <section data-background="white">
+            <img src="./images/plt.png" width=600>
+          </section>
+          <section data-background="white">
+            <img src="./images/scikit-learn.png" width=550>
+          </section>
+          <section data-background="white">
+            <img src="./images/tensorflow.png" width=700>
+          </section>
+          <section data-background="white">
+            <img src="./images/keras.png" width=600>
           </section>
         </section>
 
@@ -244,24 +220,11 @@
             <h2>Mãos à obra!</h2>
           </section>
           <section>
-            <div class="text-justify">
-              <p class="fragment fade-up"> <span class="icons"></span> É um software desenvovido para dispositvos móveis;</p>
-              <p class="fragment fade-up"> <span class="icons"></span> Pode existir o desenvolvimento para diversas plataformas
-                como: Android, iOS, Windows Phone...</p>
-            </div>
-          </section>
-        </section>
-
-        <section>
-          <section>
-            <h2>Mãos à obra!</h2>
-          </section>
-          <section>
-            <div class="text-justify">
-              <p class="fragment fade-up"> <span class="icons"></span> É um software desenvovido para dispositvos móveis;</p>
-              <p class="fragment fade-up"> <span class="icons"></span> Pode existir o desenvolvimento para diversas plataformas
-                como: Android, iOS, Windows Phone...</p>
-            </div>
+            <p style="text-align: justify">Dataset: Breast Cancer Wisconsin (Diagnostic) Data Set</p>
+            <p ><a class="url" href="http://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29">http://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29</a></p>
+            <hr>
+            <p style="text-align: justify">Repositório:</p>
+            <p ><a class="url" href="https://github.com/luiseduardogfranca/KNN_implementation">https://github.com/luiseduardogfranca/KNN_implementation</a></p>
           </section>
         </section>
         
@@ -270,7 +233,7 @@
            <p style="text-align: justify">Encontre-nos no LICA ou no Medium!</p>
            <ul class="bit-list">
              <li>
-              <span>Medium: <a href="https://medium.com/lica-ufal">https://medium.com/lica-ufal</a></span>
+              <span>Medium: <a href="https://medium.com/lica-ufal">http://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29l</a></span>
              </li>
              <li>
               <span>Github: <a href="https://github.com/LICA-UFAL">https://github.com/LICA-UFAL</a></span>
