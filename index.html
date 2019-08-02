@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="./revealjs/css/reveal.css">
+    <link rel="stylesheet" href="./revealjs/css/theme/simple.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./highlight/styles/vs2015.css">
+
+    <script src="./revealjs/js/reveal.js"></script>
+    <script src="./highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <style media="screen">
+      .title {
+        color: #dbdbdb !important;
+        font-size: 100pt !important;
+        text-align: justify !important;
+      }
+    
+      .subtitle {
+        padding-left: 15px !important;
+        border-left: 2px #b53202 solid !important;
+        text-align: justify !important;
+      }
+
+    
+      .text-right {
+        text-align: end !important;
+      }
+    
+      .panel {
+        background-color: rgb(228, 228, 237);
+        padding: 40px !important;
+        font-size: 20pt !important;
+        border-radius: 10px;
+      }
+    
+      .style-image {
+        border-style: none !important;
+        box-shadow: none !important;
+        background-color: transparent !important;
+      }
+    
+      .effect-panel {
+        box-shadow: 5px 10px 20px rgb(32, 32, 31) !important;
+      }
+    
+      .img {
+        display: inline-block !important;
+        width: 150px !important;
+      }
+    </style>
+    
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <section data-background-image="./images/background-slide2.png">
+
+          <section>
+            <h4 style="text-align:justify; color:rgba(255, 255, 255, 0.747)">Workshop de</h4>
+            <h1 class="title">Data Science</h1>
+          </section>
+          <section>
+            <table style="color:rgb(29, 35, 38); font-size:20pt;">
+              <tr>
+                <td>
+                  <div class="panel">
+                    <p><span class="icons">&#xf2b9; </span> Luís Eduardo G. França</p>
+                    <p><span class="icons">&#xf19d; </span>Universidade Federal de Alagoas</p>
+                    <p><span class="icons">&#xf0e0; </span>luiseduardogfranca@gmail.com</p>
+                    <p><span class="icons">&#xf09b; </span> <a href="https://www.github.com/luiseduardogfranca">
+                        luiseduardogfranca</a></p>
+                    <p><span class="icons">&#xf099; </span> <a href="https://twitter.com/LEduardoGF">@LEduardoGF</a></p>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Mas o que é Data Science??</h2>
+          </section>
+          <section>
+            <div class="text-justify">
+              <p class="fragment fade-up"> <span class="icons"></span> É um software desenvovido para dispositvos móveis;</p>
+              <p class="fragment fade-up"> <span class="icons"></span> Pode existir o desenvolvimento para diversas plataformas como: Android, iOS, Windows Phone...</p>
+            </div>
+          </section>
+          <section>
+            <h2>Progressive Web App</h2>
+          </section>
+          <section>
+            <div class="text-justify">
+              <p class="fragment fade-up"> <span class="icons"></span> <i>PWA</i> é uma metodologia de desenvolvimento de software;</p>
+              <p class="fragment fade-up"> <span class="icons"></span> Evolução híbrida das aplicações;</p>
+              <p class="fragment fade-up"> <span class="icons"></span> Utiliza os recursos ofertaods por navegadores para executar as aplicações.  </p>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>O que podemos fazer com Data Science?</h2>
+          </section>
+
+          <section>
+            <p class="title-topic" >Apps nativos</p>
+            <div class="text-justify">
+              <p class="fragment fade-up"> <span class="icons"></span> Acesso às funcionalidades do dispositvo com mais precisão;</p>
+              <p class="fragment fade-up"> <span class="icons"></span> Linguagem específica para desenvolvimento;</p>
+              <p class="fragment fade-up"> <span class="icons"></span> Limitação de acordo com a versão do dispositvo.</p>
+            </div>
+          </section>
+          <section>
+            <p class="title-topic">Apps híbridos</p>
+            <div class="text-justify">
+              <p class="fragment fade-up"> <span class="icons"></span> São multiplaforma (portabilidade);</p>
+              <p class="fragment fade-up"> <span class="icons"></span> Custo baixo para desenvolvimento;</p>
+              <p class="fragment fade-up"> <span class="icons"></span> Performance pouco inferior comparado ao app nativo.</p>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Quais linguagens se encaixam bem?</h2>
+          </section>
+
+          <section>
+            <p class="text-justify"> "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency."</p>
+          </section>
+
+          <section>
+            <p>Primeiros passos com Git</p>
+            <pre class="bash" data-trim contenteditable>
+              <code>
+#Gere uma chave SSH que será criada em <strong>~/.ssh/</strong> 
+<span class="icons"></span> ssh-keygen -t rsa -C "your comment"
+
+#Crie uma pasta de sua preferência
+<span class="icons"></span> cd /home/usuario/Documentos/
+<span class="icons"></span> mkdir MeuProjeto
+<span class="icons"></span> cd MeuProjeto
+
+#Configure a pasta com o Git
+<span class="icons"></span> git init
+
+#Crie um arquivo para enviar como parte do projeto
+<span class="icons"></span> echo "print('Hello World')" >> hello_world.py
+              </code>
+            </pre>
+          </section>
+
+          <section>
+            <img src="./images/github.png" alt="GitHub logo">
+          </section>
+
+          <section>
+            <div class="text-justify">
+              <p class="fragment fade-up"> <span class="icons"></span> Plataforma de hospedagem de código;</p>
+              <p class="fragment fade-up"> <span class="icons"></span> Permite o controle de versão de código com o Git;</p>
+              <p class="fragment fade-up"> <span class="icons"></span> Permite que os usuários contribuam em outros projetos;</p>
+              <p class="fragment fade-up"> <span class="icons"></span> E ofeta também a hospedagem de páginas com o <a href="https://pages.github.com/">GitHub Pages </a> e de partes de código com o <a href="https://gist.github.com/"> GitHub Gist</a>.</p>
+
+            </div>
+          </section>
+
+          <section>
+            <p>Perfil com todos os repositórios</p>
+            <img src="./images/my-profile.png" alt="My profile GitHub">
+          </section>
+
+          <section>
+            <h2> Enviando o projeto para o GitHub </h2>
+          </section>
+
+          <section>
+            <p class="title-topic"> Crie um novo repositório com o nome do seu projeto</p>
+            <img src="./images/new-repo.png" alt="New repo">
+          </section>
+
+          <section>
+            <p class="title-topic"> Crie um novo repositório com o nome do seu projeto</p>
+            <img src="./images/create-repo.png" alt="New repo">
+          </section>
+
+          <section>
+            <p class="title-topic"> Copie a URL para configurar o repositório local com o remoto </p>
+            <img src="./images/config-repo.png" alt="Config repo">
+          </section>
+
+          <section>
+            <p>Configurando repositório local</p>
+            <pre>
+              <code class="bash" data-trim contenteditable>
+#Adiciona a URL do repositório ao arquivo de configuração <strong>.git/config</strong>
+<span class="icons"></span> git remote add origin your_url.com
+              </code>
+            </pre>
+          </section>
+
+          <section>
+            <p>Enviando projeto para o repositório no GitHub</p>
+            <pre>
+              <code class="bash" data-trim contenteditable>
+#Visualize o status atual do seu projeto
+<span class="icons"></span> git status
+
+#Adicione os arquivos a fila para ser enviado
+<span class="icons"></span> git add .
+
+#Finalize a transação dos dados
+<span class="icons"></span> git commit -m "Meu primeiro commit"
+
+#Envie os dados para o repositório
+<span class="icons"></span> git push origin master
+              </code>
+            </pre>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Porque Python?!</h2>
+          </section>
+          <section>
+            <div class="text-justify">
+              <p class="fragment fade-up"> <span class="icons"></span> É um software desenvovido para dispositvos móveis;</p>
+              <p class="fragment fade-up"> <span class="icons"></span> Pode existir o desenvolvimento para diversas plataformas
+                como: Android, iOS, Windows Phone...</p>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Mãos à obra!</h2>
+          </section>
+          <section>
+            <div class="text-justify">
+              <p class="fragment fade-up"> <span class="icons"></span> É um software desenvovido para dispositvos móveis;</p>
+              <p class="fragment fade-up"> <span class="icons"></span> Pode existir o desenvolvimento para diversas plataformas
+                como: Android, iOS, Windows Phone...</p>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Mãos à obra!</h2>
+          </section>
+          <section>
+            <div class="text-justify">
+              <p class="fragment fade-up"> <span class="icons"></span> É um software desenvovido para dispositvos móveis;</p>
+              <p class="fragment fade-up"> <span class="icons"></span> Pode existir o desenvolvimento para diversas plataformas
+                como: Android, iOS, Windows Phone...</p>
+            </div>
+          </section>
+        </section>
+        
+        <section data-background="white">
+          <div style="color:#26242e;">
+           <p style="text-align: justify">Encontre-nos no LICA ou no Medium!</p>
+           <ul class="bit-list">
+             <li>
+              <span>Medium: <a href="https://medium.com/lica-ufal">https://medium.com/lica-ufal</a></span>
+             </li>
+             <li>
+              <span>Github: <a href="https://github.com/LICA-UFAL">https://github.com/LICA-UFAL</a></span>
+             </li>
+           </ul>
+          </div>
+          <div>
+           <figure style="text-align: center;">
+            <img class="style-image" src="./images/medium.gif" alt="Nodule pulmonary" width="1200">
+           </figure>
+          </div>
+        </section>
+
+
+        <!-- <section>
+          <section>
+            <h2>API com (<i>Flask</i>)</h2>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>TypeScript == JavaScript ?</h3>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Angular + Web App</h2>
+          </section>
+        </section> -->
+      </div>
+    </div>
+
+    <script src="./revealjs/lib/js/head.min.js">
+
+    </script>
+    <script type="text/javascript">
+      Reveal.initialize({
+        controls:true,
+        progress:true,
+        center: true,
+        transistion: 'slide'
+      })
+    </script>
+
+  </body>
+
+</html>
